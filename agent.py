@@ -46,7 +46,7 @@ try:
 except (KeyError, FileNotFoundError):
     GROQ_API_KEY = os.getenv("GROQ_API_KEY", "missing_key")
 
-GROQ_MODEL = "llama-3.1-8b-instant"
+GROQ_MODEL = "qwen/qwen3.8-27b"
 
 client = OpenAI(
     base_url="https://api.groq.com/openai/v1",
